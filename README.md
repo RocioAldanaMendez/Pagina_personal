@@ -3,7 +3,8 @@
 https://www.portfolio-ro.com
 
 ## Hosting: DreamHost
-## Dominio: GoDddy
+## Dominio: GoDaddy
+## Control de visualizaciones: Google Analytics
 
 ![1](https://github.com/RocioAldanaMendez/Pagina_personal/blob/fff2e83780546de62a7613b852e0d0a29e7d8d37/public_html/assets/imgs/1.png)
 ![2](https://github.com/RocioAldanaMendez/Pagina_personal/blob/fff2e83780546de62a7613b852e0d0a29e7d8d37/public_html/assets/imgs/2.png)
