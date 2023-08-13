@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Devcrud">
+    <title>Ro </title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YH83JHM8W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-5YH83JHM8W');
+    </script>
+    <style>
+        /* Estilo para el botón de volver arriba */
+        #btnScrollToTop {
+          display: none; /* Ocultamos el botón por defecto */
+          position: fixed;
+          bottom: 40px;
+          right: 40px;
+          z-index: 99;
+          width: 40px;
+          height: 40px;
+          background: #c136a3;
+          color: #fff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          border-radius: 50%;
+          opacity: 0.7;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #btnScrollToTop:hover {
+          opacity: 1;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/rocio-aldana-mendez" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/RocioAldanaMendez" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/rokuznirova/" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+            </ul>  
+           <!--  <style>
+                #spotify-player {
+                  position: fixed;
+                  top: 20px;
+                  right: 20px;
+                  z-index: 9999;
+                  width: 300px; /* Ajusta el ancho según tus necesidades */
+                  margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
+                }
+              </style>
+              
+              <div id="spotify-player">
+                <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/playlist/5l6RLfS0s5uPr1h4ru17jc?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div> -->
+              
+            <div class="header-content">
+                <h4 class="header-subtitle" ></h4>
+                <h1 class="header-title">Rocío Aldana Méndez</h1>
+                <h6 class="header-mono" >Data Scientist</h6>
+                <!-- <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i><a href=https://drive.google.com/file/d/1SIz9MKcEvolg59F6UltMqGrG4BgoArJ-/view?usp=sharing>Imprimir</a></button>
+                -->
+             <button class="btn btn-primary btn-rounded" onclick="imprimirEnOtraPagina()"><i class="ti-printer pr-2"></i>Imprimir CV</button>
+
+             <script>
+               function imprimirEnOtraPagina() {
+                 var nuevaVentana = window.open(src="assets/pdf/CV - Mendez Rocío Data Scientist.pdf", '_blank');
+                 nuevaVentana.print();
+               }
+             </script>
+             <!-- <button onclick="translateToEnglish()">Translate to English</button>
+
+             <script>
+             function translateToEnglish() {
+               const currentUrl = window.location.href;
+               const translatedUrl = `https://translate.google.com/translate?sl=auto&tl=en&u=${encodeURIComponent(currentUrl)}`;
+               window.open(translatedUrl, '_blank');
+             }
+             </script> -->
+             
+             </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Curriculum</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Rocío Aldana Méndez</h5>
+                        <div class="brand-subtitle">Data Scientist</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Portafolio</a>
+                    </li>
+                    <!--<li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Quién soy?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Estudiante Avanzado de Ingenería en Sistemas / Especializada en Ciencia de Datos</h5>
+                <p class="mt-20">Hola a todos! un gusto que pasen por acá. Yo soy Rocío, soy de Villa la Angostura, tengo 29 años, viví en Córdoba Capital 3 años y en Rusia, Moscú 3 años más, actualmente vivo en Capital Federal. Estoy felizmente de novia hace 3 años, no tenemos hijos ni mascotas, y llevamos una excelente convicencia. Empecé a estudiar Ingeniería en Sistemas en el 2020, y ahora ya estoy terminando cuarto año. 
+                    Llevo una vida muy tranquila, mi eje siempre fue mi vida profesional.
+                </p>
+                <p class="mt-20">Proyecto dedicarme a la Ciencia de Datos desde ahora, a futuro, porque se que los datos empezaron a cambiar el paradigma del mundo, cada vez toman más protagonismo en todas las industrias, en todas las empresas, se pueden hacer muchisimos trabajos en base a datos y se puede potenciar todo lo que uno se plantee.
+                </p>
+              </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Info Personal</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Fecha de nacimiento</span> : 12/02/1994</li>
+                    <li><span>Email</span> : rocioalmendez@gmail.com</li>
+                    <li><span>Número de teléfono laboral</span> : +54 (911) 2398-5405</li>
+                    <li><span>Dirección</span> : Argentina, Ciudad Autónoma de Buenos Aires - Floresta.</li>
+                </ul>
+               <!--  <p class="mt-20">Me gusta compartir mi vida en las redes, e información de nuevas tecnologías, setups, novedades de IA, me gusta compartir los trabajos que voy realizando en LinkedIn y muchos memes, asi que te invito a seguirme en las redes!!!:</p>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/rokuznirova" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/RocioAldanaMendez" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/rokuznirova" target="_blank"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                </ul>  --> 
+                <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="rocio-aldana-mendez" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ar.linkedin.com/in/rocio-aldana-mendez?trk=profile-badge"></a></div>
+                
+              </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Mi Experiencia</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Data Engineer - Transformación y preparación de datos</h6>
+                        <p class="subtitle">3 Trabajos freelance</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Data Analityc - Análisis y visualización de datos</h6>
+                        <p class="subtitle">5 Trabajos freelance.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Machine Learning - Aprendizaje automático, predictivo</h6>
+                        <p class="subtitle">3 Trabajos freelance.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <section class="section" id="Logros">
+        <div class="container">
+            <h2 class="mb-5">Sección <span class="text-danger">Logros destacados</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/ruso3.jpeg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Beca de estudio en el extranjero.</h6>
+                    
+                       <!--  <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-heart text-danger"></i>Proyecto de Análista en Sistemas + Machine Learning. </a>
+                            <a href="#"><i class="ti-comment"></i> Avalado por la Universidad de la Marina Mercante, Licenciada Maricel Verónica Cianchino.</a>
+                        </p> -->
+                    
+                        <p>En la inscripción, los postulantes elegimos el nivel de estudio (grado, maestría, doctorado, cursos de ruso o de capacitación profesional) y las universidades de interés. En la primera etapa de selección, se realizaron entrevistas en la Casa de Rusia en Buenos Aires. En la segunda etapa, las solicitudes fueron examinadas por el Ministerio de Educación y Ciencia de la Federación de Rusia y por las universidades elegidas.
+
+                            El Gobierno de la Federación de Rusia ofrece la matrícula y el arancel, materiales de estudio (libros, manuales), la utilización de las residencias de las universidades y una tarjeta de transporte para estudiantes a precio económico.
+                            
+                            Yo hice el curso de ruso, viví 3 años en Moscú y obtuve de los 6 niveles el 3ro. Obtuve notas totalmente sobresalientes, y la universidad que elegí y me otorgaron fué la Universidad Pedagógica Estatal de Moscú:</p>
+                        <p>Lectura: 100/100</p>
+                        <p>Discurso/hablar: 85/100</p>
+                        <p>Escucha: 100/100</p>
+                        <p>Escritura: 84/100</p>
+                        <p>Vocabulario y gramática: 100/100</p>
+                        <p>Especialización en política y periodismo: 81/100</p>
+
+                     
+                        <!-- <a href="https://drive.google.com/file/d/1EMqsjfpFlA_1llehdgTCRhWOGqKY5dBV/view?usp=sharing" title="Diploma_Ruso" target="_blank">Ver Certificación Internacional de Ruso como segundo idioma.</a>
+                        <!--<a href="#" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Presentación del proyecto<i class="ti-angle-double-right"></i></a>-->
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/prefe1.JPG" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Órden de mérito/promedio académico: N°4 de 500 personas instruidas de Prefectura Naval Argentina</h6>
+                                       
+                        <p>La órden de mérito se generaba en base al Promedio académico, sanciones, actitud y comportamiento. Ascendí a una jerarquía rapidamente llamada Dragoneante por lo que estaba a cargo de la sección de segundo año. </p>
+                        <p>Obteniendo no solo una Técnica Universitaria en Comunicaciones de Control y Seguridad del Tráfico Marítimo, Fluvial
+                            y Lacustre, si no también una distinción de parte de la Entidad Gubernamental durante los 2 años de cursado.</p>
+                        En la foto, yo llevando la bandera de la Escuela de Suboficiales.
+                    </div>
+                </div>
+                    <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/logo-udemm.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Beca Ordinaria por mérito: Segundo mejor promedio de la Facultad de Ingeniería</h6>
+                                       
+                        <p>Otorgada por la Universidad de la Marina Mercante, a los mejores promedios de cada Facultad, de acuerdo al siguiente mecanismo:</p>
+                        <p>Beca 100% al mejor promedio: promedio de calificación superor a 9.5</p>
+                        <p>Beca 50% al segundo mejor promedio: promedio de calificación superor a 9.</p>                     
+                        <p>Beca 25% al tercer mejor promedio: promedio de calificación superor a 8</p>                                       
+                        <p>No haber recibido ningún tipo de sanción disciplinaria.</p>                     
+                        <p>No adeudar finales del ciclo lectivo anterior, ni recursar asignaturas.</p>                     
+                        <p>No haber  obtenido equivalencias en la carrera de grado a la cual pertenece</p>     
+                    </div>
+                </div><!-- end of blog wrapper -->
+            </div>
+        </div>
+    </section>
+
+   <!-- <style>
+    .carousel-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+  
+  <style>
+    .carousel-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .carousel-content {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+  </style>
+  
+  <section class="section" id="Logros">
+    <div class="container">
+      <h2 class="mb-5">Cosas <span class="text-danger">que me gustan además de la tecnología</span></h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/imgs/cafeteria.jpeg" alt="Imagen 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/mascota.jpeg" alt="Imagen 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/mascota2.jpeg" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/caballos.jpeg" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/cerro.jpg" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/novio.jpeg" alt="Imagen 3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/imgs/setup.jpeg" alt="Imagen 3">
+              </div>
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="carousel-content">
+            <h6>El café y las cafeterías.</h6>
+            <h6>Los animales, en mi familia tenemos un perro, gato, tortuga, y caballos.</h6>
+            <h6>Música: House Relax, Kygo, Chainsmokers, Robin Schulz, Martin Garrix, Avicii</h6>
+            <h6>Deportes: Sky, Snowboard, Skate, Natación.</h6>
+            <h6>Mis cosas preferidas: vivir con mi novio, mis elementos tecnológicos del hogar/setup.</h6>
+            <h6>Mi familia: papá, mamá, hermana, cuñado.</h6>
+            <h6>Mis referentes: Inventor Nikola Tesla, Einstein</h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">3 Años</h1>
+                            <p class="text-light mb-1">Trabajando en rubro IT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">>10</h1>
+                            <p class="text-light mb-1">Proyectos finalizados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">+</h1>
+                            <p class="text-light mb-1">Mentor & Teacher experience  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Cafés bebidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!--Resume Section-->
+ <section class="section" id="resume">
+    <div class="container">
+        <h2 class="mb-5"><span class="text-danger">Mi</span> Curriculum</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                   <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Experiencia</h4>
+                            <span class="line"></span>  
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">Julio 2023 - Presente</h6>
+                        <P>Tutor Data Analytics</P>
+                        <P class="subtitle">CODERHOUSE Academia Virtual</P>
+                        <P class="subtitle">4 horas semanales sincrónicas (clase online en vivo) donde acompaño a grupos de estudiantes para resolución de dudas/consultas, y correcciones de entregables. Actualmente solo tengo un curso los dias sábados.</P>
+                        <hr>
+                        <h6 class="title text-danger">2022 - Presente</h6>
+                        <P>Científica de datos</P>
+                        <P class="subtitle">Realizando proyectos de forma autónoma.</P>
+                        <hr>
+
+                        <h6 class="title text-danger">Febrero 2018 - Abril 2023</h6>
+                        <P>Desarrollo Web </P>
+                        <P class="subtitle">Prefectura Naval Argentina. 
+                            <!--<ul class="mt40 info list-unstyled">
+                                <li><span>Dirección:</span> Edificio Guardacostas, Av. Eduardo Madero 235</li>
+                                <li><span>Código postal:</span> C1106ACC</li>
+                                <li><span>Teléfono:</span> (+5411) 4318-7400 / 0800-888-7730 Lunes a Viernes 9 a 17 hs.</li>
+                                <li><span>Correo electrónico:</span>  info@prefecturanaval.gov.ar</li>
+                            </ul>-->
+                        <hr>
+                        <h6 class="title text-danger">Marzo 2022 - Diciembre 2022</h6>
+                        <P>Profesora de Teledetección</P>
+                        <P class="subtitle">Comisión Nacional de Actividades Espaciales. CONAE. </P>
+                        <!--<ul class="mt40 info list-unstyled">
+                            <li><span>Dirección:</span> Av. Paseo Colón 751, CABA</li>
+                            <li><span>Código postal:</span> C1063ACH</li>
+                            <li><span>Teléfono:</span> :(+5411)  011 4331-0074 Lunes a Viernes 9 a 17 hs.</li>
+                        </ul>-->
+                     </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                   <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Educación</h4>
+                            <span class="line"></span>  
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">2020 - Presente</h6>
+                        <P>Ingeniería en Sistemas</P>
+                        <P class="subtitle">Universidad de la Marina Mercante.</P>
+                        <P class="subtitle">Cursando el 8vo ciclo, con las 3 materias extracurriculares ya rendidas, y una de las dos opctativas del último año. </P>
+                        <hr>
+                        <h6 class="title text-danger">2022 - 2023</h6>
+                        <P>Ciencia de Datos</P>
+                        <P class="subtitle">Bootcamp Soy Henry</P>
+                        <P class="subtitle">Donde aprendí todas mis bases en ciencia de datos, 5 meses full time usando python y Power BI.</P>
+                        <hr>
+                        <h6 class="title text-danger">2015-2017</h6>
+                        <P>Idioma ruso intermedio B1</P>
+                        <P class="subtitle">Universidad Pedagógica Estatal de Moscú - Rusia.</P>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                   <div class="card-header">
+                        <div class="pull-left">
+                            <h4 class="mt-2">Skills</h4>
+                            <span class="line"></span>  
+                        </div>
+                    </div>
+                    <div class="card-body pb-2">
+                       <h6>Python: PyTorch, TensorFlow, Keras, ScikitLearn, Numpy, Pandas, PySpark, Matplotlib, Seaborn.</h6>
+                    </p><h6>Databases, stores: SQL(PostgreSQL, MySQL), No-SQL(MongoDB, Apache Kafka, Neo4j, Cassandra), Apache Hadoop </h6>
+                       <h6>Visualization: Power BI, Google Analytics, Streamlit</h6>
+                       <h6>Cloud: AWS (Serverless architecture, AI/ML Services, deployment)</h6>
+                       <h6>Deployment: Gradio, FastAPI, Deta-Space, AWS</h6>
+                       <h6>Colaborative: Git, GitHub, Agile, SCRUM, Xtreme-programming, Trello, Asana</h6>
+                       <h6>ML: Linear and logarithmic regression, decision trees, nearest neighbors, support vector machine, Naive Bayes, Time Series, K-means, DBSCAN, Random Forest, ensembles, Neural Networks, model evaluation and validation.</h6>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4"></div>
+                <div class="card">
+                    <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Idiomas</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>Español: Nativo</h6>
+                            <h6>Inglés: B2 (Listening-B1, Reading-C1, NOTA FINAL EFSET: B2 2023)</h6>
+                            <h6>Ruso: B1 мпгу </h6>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">Mis</span> Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Data Engineering</h5>
+                            <P class="subtitle">Construcción de sistemas para permitir la recopilación y el uso de datos. Estos datos generalmente se utilizan para permitir el análisis posterior y la ciencia de datos; que a menudo implica el aprendizaje automático. Tareas: organizar, administrar y explorar grandes volúmenes de datos, así como conectarlos con lo que se necesite. Utilizo las herramientas de Big Data como Hadoop, Spark y Cloud Computing.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Data Analytics</h5>
+                            <P class="subtitle">Incorpora herramientas de visualización y reporte. Conoce cómo comunicar y transmitir una historia de manera convincente y persuasiva para impulsar cambios y soluciones. Utilizo herramientas lideres mundiales como Power BI y Tableau. Conexión con Base de datos y con Servidores Cloud.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Machine Learning</h5>
+                            <P class="subtitle">Extracción de los datos características importantes para resolver tus objetivos, creando modelos de machine learning y evaluando su performance, para que te permita predecir comportamiento, segmentar o encontrar anomalías. Modelos de aprendizaje supervisado y no supervisado. Algoritmos de regresión, bayesianos, agrupación, árboles de decición, redes neuronales.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Analista en Sistemas</h5>
+                            <P class="subtitle">Crear y traducir en requisitos funcionales. Elaboración de documentación técnica precisa y colaboración eficazmente con equipos multidisciplinarios. Identificar y resolver problemas, contribuir a la implementación exitosa de soluciones tecnológicas que mejoraron la  eficiencia de los procesos empresariales. Con excelentes habilidades de comunicación, 
+                                tanto verbal como escrita, tengo un enfoque orientado a resultados y un fuerte compromiso con la calidad y la excelencia en el análisis funcional.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Almacenamiento en la nube de AWS</h5>
+                            <P class="subtitle"> Implementación y gestión de soluciones de almacenamiento utilizando Amazon Web Services (AWS). Mi objetivo principal es ayudar a las empresas a aprovechar al máximo las capacidades de la nube para optimizar la seguridad, la escalabilidad y la eficiencia de sus sistemas de almacenamiento. Con trabajos verificables en la nube, de principio a fin.</P>
+                        </div>
+                    </div>
+                </div>
+              <!--   <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-settings" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Proximamente: Ingeniería en Sistemas</h5>
+                            <P class="subtitle">Diseño, proyección y planificación de operaciones, procesos e instalaciones para la obtención de bienes industrializados. Aplicado a esto:
+                                Dirigir y/o controlar las operaciones y el mantenimiento. Certificar el funcionamiento. Proyectar y dirigir lo referido a la higiene, seguridad y control del impacto ambiental en lo concerniente a su actividad profesional.</P>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="mb-5">Sección <span class="text-danger">Idiomas</span></h2>
+            <h1 style="text-align: center;">Inglés nivel intermedio</h1>
+            <div style="text-align: center;">
+                <img src="assets/imgs/EFSET1.jpg" style="max-width: 80%; height: 600px; border: none; display: inline-block;">
+                <img src="assets/imgs/EFSET2.jpg" style="max-width: 80%; height: 600px; border: none; display: inline-block;">
+            </div>
+            <hr>
+            <h1 style="text-align: center;">Ruso nivel intermedio</h1>
+            <div style="text-align: center;">
+                <img src="assets/imgs/certificadoruso.jpg" style="max-width: 80%; height: 900px; border: none; display: inline-block;">
+            </div>
+        </div>
+        
+    </section>
+    <!-- <section class="section" id="PowerBI">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">Mis Dashboards:</span> </h2>
+            <h2>Por el momento solo disponible para ingreso con cuentas de dominio UDEMM </h2>
+        </div></p>
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger"></span> Tablero de análisis Call Center
+                <!--  <iframe title="Dashboard_Callcenter" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=2bb709ad-9261-4f25-a79d-0c13f9a4c4f8&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" frameborder="0" allowFullScreen="true"></iframe>           
+                <button class="btn btn-primary btn-rounded" onclick="verTablero()">VER TABLERO 1</button>
+                
+                <script>
+                    function verTablero() {
+                        var nuevaVentana = window.open('https://app.powerbi.com/reportEmbed?reportId=2bb709ad-9261-4f25-a79d-0c13f9a4c4f8&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70', '_blank');
+                        var audio = document.getElementById("audio");
+                        audio.play();
+                    }
+                    </script> 
+            </h2>
+             <h2>Mini demo 1:</h2>
+            <img src="assets/video/demo0.gif" alt="Demo GIF" width="900">
+        </div>
+        <br><br><br>
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger"></span> Estudio del mercado busatil: Índice S&P 500
+                 <button class="btn btn-primary btn-rounded" onclick="verTablero2()">VER TABLERO 2</button>
+                    
+                    <script>
+                        function verTablero2() {
+                            var nuevaVentana = window.open('https://app.powerbi.com/reportEmbed?reportId=2a8cbebd-51b0-40b1-9067-ba0512b6e4f7&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70', '_blank');
+                            var audio = document.getElementById("audio");
+                            audio.play();
+                        }
+                    </script> 
+                    <!-- <iframe title="TP-PowerBI-SP500-v3.0" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=2a8cbebd-51b0-40b1-9067-ba0512b6e4f7&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" frameborder="0" allowFullScreen="true"></iframe>  
+                </h2> 
+                <h2>Mini demo 2:</h2>
+                    <img src="assets/video/DEMO1.gif" alt="Demo GIF" width="900">
+            </div>
+            <!--  <div class="container">
+                <h2 class="mb-5 pb-4"><span class="text-danger"></span> Dashboard estudio médico: Pacientes en una unidad hospitalaria</h2>
+                <iframe title="dashmedico" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0c6c472c-2833-413e-9ddf-8458fc71186d&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger"></span> Dashboard estudio médico: Administración</h2>
+            <iframe title="Dashaboard_admi" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=507192ad-0b40-400a-8088-57c83f1f4187&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" frameborder="0" allowFullScreen="true"></iframe>
+        </div> 
+        <br><br><br>
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger"></span> Estudio de ventas
+                 <button class="btn btn-primary btn-rounded" onclick="verTablero2()">VER TABLERO 3</button>
+                    
+                    <script>
+                        function verTablero2() {
+                            var nuevaVentana = window.open('https://app.powerbi.com/reportEmbed?reportId=8a4b5a01-5498-499d-af5b-9f559d01e634&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70', '_blank');
+                            var audio = document.getElementById("audio");
+                            audio.play();
+                        }
+                    </script> 
+                    <!-- <iframe title="TP-PowerBI-SP500-v3.0" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=2a8cbebd-51b0-40b1-9067-ba0512b6e4f7&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" frameborder="0" allowFullScreen="true"></iframe>  
+                </h2> 
+                <h2>Mini demo 3:</h2>
+                    <img src="assets/video/minidemo3 (2).gif" alt="Demo GIF" width="900">
+            </div>
+    </section> -->
+    
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal"></h2>
+            <!--<button class="btn bg-primary w-lg" >Contratame</button>-->
+        </div>
+    </section>
+
+  
+    
+
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Mi <span class="text-danger">Portafolio</span></h2>
+            <div class="row">
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/ventas.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Estudio de ventas impactadas en un comercio</h6>
+                    
+                        <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-stats-up"></i>Proyecto de Data Analityc </a>
+                        </p>
+                        <p>Análisis del mercado </p>
+                        <p><b>Tecnologías: Python para EDA y ETL, Power BI para presentación</b></p>
+                        <p>Proyecto: 20/07/2023</p>
+
+                        
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=8a4b5a01-5498-499d-af5b-9f559d01e634&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70" title="Estudio de ventas" target="_blank">Ver deploy con cuenta UdeMM de Power BI o contactarse para una muestra free</a>
+                        <style>
+                            .responsive-image {
+                              max-width: 800px;
+                              height: 400px;
+                            }
+                          
+                           
+                          </style>
+                          <img class="responsive-image" src="assets/imgs/DASH1.png" alt="Imagen">
+                        
+                        <!--<a href="#" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Presentación del proyecto<i class="ti-angle-double-right"></i></a>-->
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/logo-sepsai-1.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Seps-AI: Modelo de detección de Sepsis y prevención de mortalidad a pacientes en Cuidados Intensivos.</h6>
+                    
+                        <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-rocket"></i>Proyecto de Análista en Sistemas + Machine Learning. </a>
+                            <a href="#"><i class="ti-thumb-up"></i> Avalado por la Universidad de la Marina Mercante, Licenciada Maricel Verónica Cianchino.</a>
+                        </p>
+                    
+                        
+                        <p>Sistema de Inteligencia artificial. Estudio de comercialización para posicionarlo en el mercado. Documentación. </p>
+
+                        <p><b>Tecnologías: Docker, Python, Airflow, Streamlit, AWS, Git, Github. Arquitectura 4 capas. Fuente de datos: Organización Mundial de la Salud.</b></p>
+                        <p>Proyecto de duración: 4 meses. 01/04/2023 - 01/08/2023 Para ver el Deploy, documentación y más podes ingresar en el siguiente acceso:</p>
+
+                        <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/9d37da3455.html"></iframe>
+                        <!-- <a href="https://www.yumpu.com/es/document/read/68315856/ieee-830-medinova-ii-v4" title="Portafolio_Méndez_Rocío" target="_blank">Leer Documentación</a> -->
+                        <!--<a href="#" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="#" class="read-more">Presentación del proyecto<i class="ti-angle-double-right"></i></a>-->
+                    </div>
+                </div><!-- end of blog wrapper -->
+
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/RJC_Cuponera.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">RJF - Cuponera. Sistema del tipo Fidelity.</h6>
+
+                        <p class="post-details">
+                            <a href="#">By:Federico Ferro - Rocío Aldana Méndez - José Osvaldo Flores Copa           -  </a>
+                            <a href="#"><i class="ti-pie-chart"></i> Proyecto de Analista en Sistemas</a>
+                            <a href="#"><i class="ti-thumb-up"></i> Avalado por Universidad de la Marina Mercante, Ingeniero Osvaldo Marccovecchio & Laboratorio Técnico.</a>
+                        </p>
+                        
+                        <p>Sistema que administra cupones generados por entidades comerciales para beneficios de usuarios, asociado con el Gobierno de la Ciudad de Buenos Aires.</p>
+                        <p><b>Tecnologías: Arquitectura 3 capas. SQL Server, Node.js, Microsoft.NET, Angular, JavaScript, jQuery, HTML, CSS, AWS.</b></p>
+                        <a href="https://www.canva.com/design/DAFfWYfnIVw/R3v1gp-OVcfjUmVLBkRxPA/view" target="_blank">Presentación del proyecto >></a>
+                        <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/96d9bc7ec7.html"></iframe>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <!-- blog-card -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/S&P_500.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">S&P 500: Recomendaciones de inversión en el Mercado Bursatil</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-stats-up"></i> Data Analytics</a>
+                            <!--<a href="#"><i class="ti-comment"></i> 312</a>-->
+                        </p>
+                        
+                        <p>Diseñar y desarrollar un Dashboard en Power BI para inversionistas que incluyendo: estudio minucioso del índice S&P500, decisiones de inversión, identificar industrias y sectores con mejor retorno. Desarrollo de KPI’s eligiendo un foco. 
+                        Identificación de los mejores días para realizar inversiones. Proceso de Análisis exploratorio de datos, Extracción, Transformación y carga con Python. Base de datos en MySQL. </p>
+                        <p><b>Tecnologías: Power BI, KPI'S, Python, Mysql.</b></p>
+                        <a href='https://app.powerbi.com/reportEmbed?reportId=2a8cbebd-51b0-40b1-9067-ba0512b6e4f7&autoAuth=true&ctid=bd085bdc-7e08-4b26-870c-a9331a90ec70' target="_blank" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="https://github.com/RocioAldanaMendez/S-P_500_EDA_Dashboard" target="_blank" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div><!-- end of blog wrapper -->
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/Medinova.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Medinova-II: Dashboard médico en Power BI + modelo de ML</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Osvaldo Spolzino, Carla Carrasco, Maurén Hermosillo, Rodrigo Pérez, Rocío Méndez.</a>
+                            <a href="#"><i class="ti-cloud"></i>Proyecto de Data Engineer + Data Analytic + Machine Learning</a>
+                        </p>
+                        
+                        <p> Diseñar y desarrollar un Sistema para centros de Salud que incluía: dashboard médico, administrativo. Un modelo de detección de Sepsis y un modelo de predicción de mortalidad en Unidades de Cuidados Intensivos. Desarrollo UX con Streamlit, menú de opciones, ingreso de datos (Python). Desarrollo de automatización ETL con Airflow, AWS, Amazon S3, RDS. Motor de base de datos en MySQL.</p>
+                        <p><b>Tecnologías: Python, MySQL, Power BI, AWS, Airflow, </b></p>
+                        <a href="https://www.canva.com/design/DAFeNgPyHls/YTKfBu13DjGRth8r3FqZ-w/view" target="_blank" class="read-more">Presentación del proyecto<i class="ti-angle-double-right"></i></a>
+                        <a href="https://github.com/RocioAldanaMendez/Cuidados_Intensivos" target="_blank" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="https://www.yumpu.com/es/document/read/68315856/ieee-830-medinova-ii-v4" target="_blank" class="read-more" title="Portafolio_Méndez_Rocío" target="_blank">Leer Documentación</a>
+                        <a href="https://maurengit-smartdata-main-qf4mpg.streamlit.app/" target="_blank" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+
+                    </div>
+                </div>
+               <!--  <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/Medinova-I.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">Medinova-I: Sistema de gestión de Unidades Hospitalarias, distribución de camas de internación.</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Lic. Biffani Claudio, Polga Hernán, Competiello Leandro. Rocío Méndez.</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> Proyecto de Analista en Sistemas</a>
+                        </p>
+                        <p>Se realizó la asignación de la cantidad de desarrolladores, distribución de tareas, calendarización, estimación de tiempos y presupuestos, documentación del sistema IEEE830. Se trabajó con Asana, y se distribuyó recursos desde la base de datos, store procedures, back-end, front-end, UX, testing y QA, y presentación a clientes cada 
+                            semana. Estudio y despliegue de requisitos funcionales y no funcionales. </p>
+                            <p><b>Tecnologías: Canva, Planificación: Modelado y creación de base de datos relacionales, creación de Store Procedures, Despliegue Back-End, Despliegue Front-End, Testeing, QA, evaluación de riesgos.</b></p>
+                            <a href="#" class="read-more">Documentación<i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div> -->
+             
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/SIBI.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">SIBI: Sistema Buques de Interés</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-rss-alt"></i> Sistema end to end </a>
+                            <a href="#"><i class="ti-anchor"></i> Avalado por Prefectura Naval Argentina. </a>
+                        </p>
+                        
+                        <p>Creación y desarrollo del sistema SIBI: Sistema de buques de interés. Conexión 
+                            a la API de ArcGIS, trabajo con mapas con JavaScript, historial de buques en las 
+                            200 millas Argentinas. Sistema cuyo fin es recabar información para ser claramente identificable por parte del personal costero, el estado de los buques. Sistema para uso y en concurso con 11 paises de Latinoamérica para unificación central de la información. </p>
+
+                        <a href="https://drive.google.com/file/d/1e_9fcwnFsu2Z8wkiYlmrQRb-OYuSOmlR/view?usp=sharing" target="_blank" class="read-more">Documentación<i class="ti-angle-double-right"></i></a>
+                        <!--<a href="" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="" class="read-more">Presentación del proyecto<i class="ti-angle-double-right"></i></a>-->
+                        
+                    </div>
+                </div><!-- end of blog wrapper -->
+                
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/nistelx.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h4 class="title">NistelX: Sistema de recomendación de películas.</h4>
+
+                        <p class="post-details">
+                            <a href="#">By: Rocío Aldana Méndez</a>
+                            <a href="#"><i class="ti-rocket"></i> Machine Learning</a>
+                        <!--    <a href="#"><i class="ti-comment"></i> 312</a>-->
+                        </p>
+                        
+                        <p>Para este sistema utilicé las bases de datos de los siguientes canales de streaming: Disney Plus, Amazon Prime Video, Netflix, y Hulu. Permite recomendar una película o serie de a cuerdo al ID del cliente, como asi tambien hacer diferentes tipos de consultas para gerencias como cantidad de peliculas por plataforma, Director mayor solicitado, entre otras.</p>
+
+                        <a href="https://apidetaspace-2-u9267432.deta.app/" target="_blank" class="read-more">Deploy <i class="ti-angle-double-right"></i></a>
+                        <a href="https://github.com/RocioAldanaMendez/FastAPI" target="_blank" class="read-more">Ver código <i class="ti-angle-double-right"></i></a>
+                        <a href="https://youtu.be/UmyXkGWz9uA" target="_blank" class="read-more">Explicación en Youtube <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+     <!-- Botón para volver arriba -->
+     <button onclick="scrollToTop()" id="btnScrollToTop" title="Volver arriba">↑</button><hr>
+     <!-- Estilos del boton para volver arriba-->
+     <!-- <style>
+     #btnScrollToTop {
+     display: none; /* Ocultamos el botón por defecto */
+     position: fixed;
+     bottom: 20px;
+     right: 30px;
+     z-index: 99;
+     font-size: 18px;
+     background: #007bff;
+     color: #fff;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 10px;
+     border-radius: 50%;
+     opacity: 0.7;
+     }
+
+     #btnScrollToTop:hover {
+     opacity: 1;
+     }
+     </style> -->
+   <!-- <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">En contacto</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Celular : <br> <span class="text-muted">+54 (911) 2398-5405</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Dirección :<br> <span class="text-muted">CABA, Bs. As. Argentina</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">rocioalmendez@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link" href="https://www.facebook.com/profile.php?id=100077715908463"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://twitter.com/rokuznirova"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/rocio-aldana-mendez"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/rokuznirova"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/RocioAldanaMendez"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Creado con <i class="ti-heart text-danger"></i> por <a href="" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Rocío Aldana Méndez.</span></a> 
+            </p>
+        </div>
+    </footer>
+    <audio id="audio" src="assets/audio/pin.mp3"></audio>
+
+    <script>
+        // Función para desplazarse suavemente hacia arriba al hacer clic en el botón
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      
+        // Mostrar u ocultar el botón de volver arriba según la posición de desplazamiento
+        window.onscroll = function() {
+          showScrollButton();
+        };
+      
+        function showScrollButton() {
+          const scrollButton = document.getElementById('btnScrollToTop');
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollButton.style.display = 'block';
+          } else {
+            scrollButton.style.display = 'none';
+          }
+        }
+      </script>
+      
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
